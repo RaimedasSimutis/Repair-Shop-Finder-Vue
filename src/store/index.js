@@ -58,7 +58,7 @@ export default {
         // console.log(data.city)
         dispatch('fetchRepairShops', data.city)
       } catch (error) {
-        console.log('Location by IP fetch failed', error)
+        // console.log('Location by IP fetch failed', error)
       }
     }
 
