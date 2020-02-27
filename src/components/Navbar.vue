@@ -5,7 +5,7 @@
     </div>
     <div class="navbar__menu">
       <ul class="navbar__menu-list">
-        <li class="navbar__menu-list-item"><a href="" class="navbar__menu-link">Home</a></li>
+        <li class="navbar__menu-list-item"><router-link :to="{ name: 'Home'}" class="navbar__menu-link">Home</router-link></li>
         <li class="navbar__menu-list-item"><a href="" class="navbar__menu-link">About</a></li>
         <li class="navbar__menu-list-item"><a href="" class="navbar__menu-link">Services</a></li>
         <li class="navbar__menu-list-item"><a href="" class="navbar__menu-link">Blog</a></li>
@@ -24,16 +24,17 @@ export default {
 
 <style lang="scss" scoped>
   .navbar {
-    background: #ffffff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     height: 70px;
     width: 100%;
     position: sticky;
-    top: 0px;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
+    z-index: 1000;
 
     &__brand {
       display: flex;
@@ -53,7 +54,7 @@ export default {
 
     &__menu-link {
       text-decoration: none;
-      color: #000066;
+      color: #006;
       padding-left: 40px;
       font-size: 18px;
       font-weight: 500;
@@ -65,6 +66,5 @@ export default {
         color: #ff6a73;
       }
     }
-
   }
 </style>

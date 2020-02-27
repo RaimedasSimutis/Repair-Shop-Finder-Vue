@@ -8,11 +8,21 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
   components: {
     Navbar
+  },
+  created () {
+    // console.log('Elements created')
+    this.fetchLocationByIP()
+  },
+  methods: {
+    ...mapActions({
+      fetchLocationByIP: 'fetchLocationByIP'
+    })
   }
 }
 </script>
@@ -28,7 +38,12 @@ export default {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
   font-family: 'Muli', 'Segoe UI', sans-serif;
   color: black;
 }
@@ -37,7 +52,6 @@ body {
   background: #fff4f5;
   padding: 0;
   margin: 0;
-
 }
 
 </style>

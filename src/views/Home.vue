@@ -1,10 +1,10 @@
 <template>
   <section class="hero">
     <div class="hero__text-area">
-      <h1 class="hero__header animated fadeInDown">Car Care center</h1>
+      <h1 class="hero__header animated fadeInDown">Car Repair Shops</h1>
       <p class="hero__paragraph animated fadeInUp">Maecenas interim loremelefied orci aliqual. Aliquam non rhonous magna suspected commodo ut. Maecenas tincidum enim Lorem ipsum dolor sit.</p>
       <div class="hero__buttons-container animated slideInLeft">
-        <router-link :to="{ name: 'Search'}"><BaseButton class="hero__button">Find Repair shops</BaseButton></router-link>
+        <router-link :to="{ name: 'Grid'}"><BaseButton class="hero__button">Find Repair shops</BaseButton></router-link>
         <BaseButton :outlined="true" class="hero__button hero__button--outlined">Find Repair shops</BaseButton>
       </div>
     </div>
@@ -47,7 +47,6 @@ export default {
       line-height: 80px;
       font-weight: 900;
       margin-bottom: 18px;
-
     }
 
     &__paragraph {
@@ -69,6 +68,5 @@ export default {
       width: 450px;
       height: auto;
     }
-
   }
 </style>
